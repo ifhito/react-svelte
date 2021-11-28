@@ -19,7 +19,12 @@ Webpack5 Module Federationを使用した方法。
 - 完全に別のサーバーとしてコンポーネントを用意し読み込ませることが可能
 ### デメリット
 - web component化するための問題がある場合がある。詳しくは参考サイトのSvelteでweb componentを参照
-- webpack5の機能なのでrollupやviteなどでsvelteを使いたい場合は使えない
+- webpack5の機能なのでrollupやviteなどでsvelteを使いたい場合は使えない※
+
+※ 他のバンドルツールにもあるものはある(ただあくまで有志の人が作っている)
+- rollup([module-federation/rollup-federation](https://github.com/module-federation/rollup-federation))
+- esbuild([esbuild-module-federation](https://www.npmjs.com/package/esbuild-module-federation))
+- vite([vite-plugin-federation](https://www.npmjs.com/package/@originjs/vite-plugin-federation))
 
 # 参考サイト
 
