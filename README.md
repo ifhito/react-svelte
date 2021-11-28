@@ -23,9 +23,6 @@ Webpack5 Module Federationを使用した方法。
 
 [Webpack5 Module Federation で始めるマイクロフロントエンド](https://zenn.dev/azukiazusa/articles/6686cb89ae13e5)
 
-[NPM start returns error, "There might be a problem with the project dependency tree"](https://stackoverflow.com/questions/56528222/npm-start-returns-error-there-might-be-a-problem-with-the-project-dependency-t)
-(webpackのバージョン違いの修正のため)
-
 [ModuleFederationPlugin](https://webpack.js.org/plugins/module-federation-plugin/)
 
 [svelte - Custom element API](https://svelte.dev/docs#Custom_element_API)
