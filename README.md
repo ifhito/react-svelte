@@ -10,6 +10,8 @@ Webpack5 Module Federationを使用した方法。
 - コンパイルしてpurejs化したsvelteを使う。そのため、web component化はしないので、svelteの機能は全て使える
 ### デメリット
 - webpackではsrcファイル内でリソースを完結させる必要がある。(設定でどうにかなる?)
+  - 設定でどうにかなる([How to import an external file from project root with webpack?](https://pretagteam.com/question/how-to-import-an-external-file-from-project-root-with-webpack))
+  - ただおそらくあまり良くはない。基本的にはsrcで完結させることが普通
 
 ## webpack使う方法
 ### メリット
