@@ -33,8 +33,6 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      manifest: "./public/manifest.json",
-      favicon: "./public/favicon.ico",
       template: "./public/index.html",
     }),
     new ModuleFederationPlugin({

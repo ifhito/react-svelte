@@ -1,15 +1,38 @@
 # react-svelte
 
+Webpack5 Module Federationを使用した方法。
+
+# 比較
+
+## useRef使ってReactに埋め込む方法
+### メリット
+- いちいち、使うコンポーネントの面倒な設定は必要ない
+- コンパイルしてpurejs化したsvelteを使う。そのため、web component化はしないので、svelteの機能は全て使える
+### デメリット
+- webpackではsrcファイル内でリソースを完結させる必要がある。(設定でどうにかなる?)
+
+## webpack使う方法
+### メリット
+- react内やvue内で使うためのコードを用意する必要はない
+- 完全に別のサーバーとしてコンポーネントを用意し読み込ませることが可能
+### デメリット
+- web component化するための問題がある場合がある。詳しくは参考サイトのSvelteでweb componentを参照
+- webpack5の機能なのでrollupやviteなどでsvelteを使いたい場合は使えない
+
 # 参考サイト
 
-[How to use Svelte component inside a React app?](https://www.youtube.com/watch?v=6MI9mirMh6w)
+[Webpack5 Module Federation で始めるマイクロフロントエンド](https://zenn.dev/azukiazusa/articles/6686cb89ae13e5)
 
-[上youtuneのgithubのwebpack.config.js](https://github.com/tanhauhau/svelte-component-in-react-app/blob/master/config/webpack.config.js)
+[NPM start returns error, "There might be a problem with the project dependency tree"](https://stackoverflow.com/questions/56528222/npm-start-returns-error-there-might-be-a-problem-with-the-project-dependency-t)
+(webpackのバージョン違いの修正のため)
 
-[svelte-loader](https://github.com/sveltejs/svelte-loader)
+[ModuleFederationPlugin](https://webpack.js.org/plugins/module-federation-plugin/)
 
-[svelte-adapter](https://github.com/pngwn/svelte-adapter)
+[svelte - Custom element API](https://svelte.dev/docs#Custom_element_API)
 
-[NuxtでSvelteコンポーネントを動かしてみる](https://zenn.dev/katsuking/articles/16578da99271aa)
- 
-[Next.js + SvelteによるnoteのフロントエンドApp分割](https://note.jp/n/n7f757d7050f6)
+[SvelteでWeb Componentsを作ってみた](https://tech.actindi.net/2021/04/05/080000)
+
+[Webpack module federation](https://stackoverflow.com/questions/68976213/webpack-module-federation)
+(Module Federationの設定方法の修正のためのstackoverflow)
+
+[Svelteでweb components](https://zenn.dev/miyanokomiya/scraps/1bf5b9c21d7564)
